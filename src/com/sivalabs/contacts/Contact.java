@@ -1,5 +1,6 @@
 package com.sivalabs.contacts;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -10,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
  * @author SivaLabs
@@ -17,7 +20,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 
 @Entity
 @Table(name = "CONTACTS")
-public class Contact {
+@Cache(usage= CacheConcurrencyStrategy.READ_WRITE)
+public class Contact implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;

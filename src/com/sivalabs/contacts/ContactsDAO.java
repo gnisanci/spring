@@ -30,6 +30,7 @@ public class ContactsDAO
 	{
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Contact.class);
 		criteria.add(Restrictions.ilike("name", name+"%"));
+        criteria.setCacheable(true);
 		return criteria.list();
 	}
 	
@@ -37,6 +38,7 @@ public class ContactsDAO
 	public List<Contact> getAllContacts()
 	{
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Contact.class);
+        criteria.setCacheable(true);
 		return criteria.list();
 	}
 	
