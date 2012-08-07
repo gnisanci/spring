@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c023c37-6d5d-4368-aab4-2c4a5da38038" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-collections-3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ehcache-core-2.6.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ehcache-terracotta-2.6.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javassist-3.12.0.GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/servlet-api-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/sizeof-agent-1.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/slf4j-jdk14-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/terracotta-toolkit-1.6-runtime-5.0.0.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ejb3-persistence-1.0.2.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-annotations-3.4.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-commons-annotations-3.1.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-core-3.3.2.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javassist-3.7.ga.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringHibernate.iml" afterPath="$PROJECT_DIR$/SpringHibernate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sivalabs/contacts/Contact.java" afterPath="$PROJECT_DIR$/src/com/sivalabs/contacts/Contact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sivalabs/contacts/ContactsDAO.java" afterPath="$PROJECT_DIR$/src/com/sivalabs/contacts/ContactsDAO.java" />
-    </list>
+    <list default="true" id="5c023c37-6d5d-4368-aab4-2c4a5da38038" name="Default" comment="" />
     <ignored path="SpringHibernate.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -832,17 +810,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.49772727" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23257576" sideWeight="0.49517685" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2931818" sideWeight="0.30546623" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2931818" sideWeight="0.670418" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2931818" sideWeight="0.670418" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4726688" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
