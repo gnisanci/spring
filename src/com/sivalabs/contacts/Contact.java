@@ -20,7 +20,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 @Entity
 @Table(name = "CONTACTS")
-@Cache(usage= CacheConcurrencyStrategy.READ_WRITE)
+//@Cache(usage= CacheConcurrencyStrategy.READ_WRITE)
 public class Contact implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

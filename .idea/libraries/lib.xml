@@ -5,7 +5,10 @@
       <root url="file://$PROJECT_DIR$/lib" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/grepo-core-1.5.3-source.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grepo-query-hibernate-1.5.3-source.jar!/" />
+    </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
   </library>
 </component>

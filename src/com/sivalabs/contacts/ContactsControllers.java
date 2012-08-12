@@ -26,12 +26,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ContactsControllers
 {
-	@Autowired
-	private ContactsDAO contactsDAO;
-	
-	@Autowired
+    @Autowired
+	private ContactRepository contactRepository;
+
+    @Autowired
 	private ContactFormValidator validator;
-	
+
 	@RequestMapping("/home")
 	public String home()
 	{
@@ -50,7 +50,7 @@ public class ContactsControllers
 	public ModelAndView searchContacts(@RequestParam(required= false, defaultValue="") String name)
 	{
 		ModelAndView mav = new ModelAndView("showContacts");
-		List<Contact> contacts = contactsDAO.searchContacts(name.trim());
+		List<Contact> contacts = contactRepository.findContactsByName(name.trim());
 		mav.addObject("SEARCH_CONTACTS_RESULTS_KEY", contacts);
 		return mav;
 	}
@@ -59,7 +59,7 @@ public class ContactsControllers
 	public ModelAndView getAllContacts()
 	{
 		ModelAndView mav = new ModelAndView("showContacts");
-		List<Contact> contacts = contactsDAO.getAllContacts();
+		List<Contact> contacts = contactRepository.findAllContacts();
 		mav.addObject("SEARCH_CONTACTS_RESULTS_KEY", contacts);
 		return mav;
 	}
@@ -81,7 +81,7 @@ public class ContactsControllers
 		{				
 			return "newContact";
 		}
-		contactsDAO.save(contact);
+		contactRepository.save(contact);
 		status.setComplete();
 		return "redirect:viewAllContacts.do";
 	}
@@ -90,7 +90,7 @@ public class ContactsControllers
 	public ModelAndView edit(@RequestParam("id")Integer id)
 	{
 		ModelAndView mav = new ModelAndView("editContact");
-		Contact contact = contactsDAO.getById(id);
+		Contact contact = contactRepository.getById(id);
 		mav.addObject("editContact", contact);
 		return mav;
 	}
@@ -102,7 +102,7 @@ public class ContactsControllers
 		if (result.hasErrors()) {
 			return "editContact";
 		}
-		contactsDAO.update(contact);
+		contactRepository.update(contact);
 		status.setComplete();
 		return "redirect:viewAllContacts.do";
 	}
@@ -112,7 +112,8 @@ public class ContactsControllers
 	public ModelAndView delete(@RequestParam("id")Integer id)
 	{
 		ModelAndView mav = new ModelAndView("redirect:viewAllContacts.do");
-		contactsDAO.delete(id);
+		contactRepository.delete(contactRepository.getById(id));
+                //delete(id);
 		return mav;
 	}
 	
