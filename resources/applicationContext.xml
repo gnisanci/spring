@@ -41,9 +41,9 @@
             <props>
                 <prop key="hibernate.dialect">${hibernate.dialect}</prop>
                 <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
-                <!--<prop key="hibernate.cache.use_second_level_cache">false</prop>
+                <prop key="hibernate.cache.use_second_level_cache">true</prop>
                 <prop key="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</prop>
-                <prop key="hibernate.cache.use_query_cache">true</prop>-->
+                <prop key="hibernate.cache.use_query_cache">true</prop>
             </props>
         </property>
         <property name="packagesToScan" value="com.sivalabs"></property>
@@ -74,9 +74,10 @@
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 
-    <bean id="contactRepository" parent="abstractRepository">
+    <bean parent="abstractRepository">
         <property name="proxyInterface"
                   value="com.sivalabs.contacts.ContactRepository" />
+        <property name="caching" value="ENABLED" />
     </bean>
 
 
